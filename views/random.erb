@@ -1,3 +1,15 @@
 <!-- /views/random.erb -->
 
-<p>Enter a number</p>
+<form action="/random/results">
+  <div>
+    <label for="min">Minimum</label>
+    <input name="floor" id="min" type="text" placeholder="e.g. 3.5">
+  </div>
+  <div>
+    <label for="max">Maximum</label>
+    <input name="ceiling" id="max" type="text" placeholder="e.g. 4.7">
+  </div>
+  <div>
+    <button>Pick random number</button>
+  </div>
+</form>

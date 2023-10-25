@@ -1,0 +1,13 @@
+<!-- /views/payment_results.erb -->
+
+<h1>Payment results</h1>
+<div>APR</div>
+<p><%= @apr.to_fs(:percentage, { :precision => 4 }) %></p>
+<div>Number of years</div>
+<p><%= @time %></p>
+<div>Principal</div>
+<p><%= @principal.to_fs(:currency) %></p>
+<div>Monthly payment</div>
+<p><%= @payment.to_fs(:currency) %></p>
+<p></p>
+<a href="/payment/new">Calculate another payment<a>
